@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111631">
+    <meta name="description" content="Cigale — effortless, sunlit craft.">
+    <title>Cigale — Let it sing</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./js/hero.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero__scene" aria-hidden="true">
+          <div class="hero__glow"></div>
+          <div class="hero__song">
+            <span class="hero__ripple"></span>
+            <span class="hero__ripple"></span>
+            <span class="hero__ripple"></span>
+          </div>
+          <svg class="hero__emblem" viewBox="0 0 280 250" fill="none">
+            <defs>
+              <linearGradient id="wing" x1="28" y1="34" x2="252" y2="188" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ffd9a0" stop-opacity=".18"/>
+                <stop offset=".48" stop-color="#f4f1ea" stop-opacity=".72"/>
+                <stop offset="1" stop-color="#ff7a3d" stop-opacity=".24"/>
+              </linearGradient>
+              <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+                <stop stop-color="white" stop-opacity="0"/>
+                <stop offset=".5" stop-color="#fff8e9" stop-opacity=".8"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+              </linearGradient>
+              <clipPath id="wings-clip">
+                <path d="M135 129C94 41 31 34 23 46c-11 17 38 108 106 111m16-28c41-88 104-95 112-83 11 17-38 108-106 111"/>
+              </clipPath>
+            </defs>
+            <path d="M135 129C94 41 31 34 23 46c-11 17 38 108 106 111m16-28c41-88 104-95 112-83 11 17-38 108-106 111" fill="url(#wing)" stroke="#ffd9a0" stroke-opacity=".76" stroke-width="1.5"/>
+            <g clip-path="url(#wings-clip)" class="hero__shimmer">
+              <path d="M58 0h48l112 250h-48z" fill="url(#shine)"/>
+            </g>
+            <path d="M140 83c-13 0-21 15-21 36 0 20 8 39 21 51 13-12 21-31 21-51 0-21-8-36-21-36Z" fill="#ff7a3d" stroke="#ffd9a0" stroke-width="1.5"/>
+            <path d="M132 88 108 58m40 30 24-30m-32 69-30 27m38-27 30 27m-35-6v46" stroke="#ffd9a0" stroke-width="1.4" stroke-linecap="round"/>
+            <circle cx="140" cy="110" r="3" fill="#0b1020"/>
+          </svg>
+          <div class="hero__motes" id="motes"></div>
+        </div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">A little light, a little life</p>
+          <h1 id="hero-title">Cigale</h1>
+          <p class="hero__subhead">Effortless craft, made for sunlit days.</p>
+          <a class="hero__cta" href="#">Start singing <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="hero__note">Find your own bright note.</p>
+      </section>
+    </main>
+  </body>
+</html>

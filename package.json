@@ -1,0 +1,13 @@
+{
+  "name": "cigale-landing",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^9"
+  }
+}
